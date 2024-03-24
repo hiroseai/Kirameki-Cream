@@ -1,0 +1,448 @@
+@charset "UTF-8";
+
+/* ページ全体のスタイル
+------------------------------------------ */
+html {
+  font-size: calc(10 * 100vw / 390);    
+}
+
+@media (min-width:768px) {
+   html {
+        font-size: calc(10 * 100vw / 1200);
+   }
+}
+
+@media (min-width: 1200px) {
+   html {
+        font-size: 62.5%;
+   }
+}
+
+body {
+    font-family: "Noto Serif JP", serif, "Marcellus", serif, "EB Garamond", serif;
+    line-height: 1.5;
+    font-size: 1.6rem; 
+    color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.container-body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container-body {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+}
+
+.no-pc {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .no-pc {
+    display: block;
+  }
+}
+
+.pc {
+  display: block;
+}
+
+.sp {
+  display: none;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .pc {
+    display: none;
+  }
+
+  .sp {
+    display: block;
+  }
+}
+
+.button-blue-ghost {
+  font-size: 5.33vw;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #0271e0;
+  border-radius: 8.53vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 81.33vw;
+  margin: 0 auto;
+  padding: 5.21vw 0 5.21vw 0;
+}
+
+@media (min-width: 768px) {
+  .button-blue-ghost {
+    font-size: 1.25vw;
+    border-radius: 2.5vw;
+    max-width: 18.75vw;
+    margin: 0 auto;
+    padding: 1.02vw 0 1.02vw 1.25vw;
+  }
+}
+
+@media (min-width: 1920px) {
+  .button-blue-ghost {
+    font-size: 1.5rem;
+    border-radius: 3rem;
+    max-width: 22.5rem;
+    margin: 0 auto;
+    padding: 1.22rem 0 1.22rem 1.5rem;
+  }
+}
+
+.button-blue-ghost-icon {
+  font-size: 5.79vw;
+  font-weight: 700;
+  color: #ffffff;
+  margin-left: 3.41vw;
+}
+
+@media (min-width: 768px) {
+  .button-blue-ghost-icon {
+    font-size: 1.83vw;
+    margin-left: 1.25vw;
+  }
+}
+
+@media (min-width: 1920px) {
+  .button-blue-ghost-icon {
+    font-size: 2.1944rem;
+    margin-left: 1.5rem;
+  }
+}
+
+/* top
+------------------------------------------ */
+.top {
+  position: relative;
+    background-image: url(/asset/image/top/mainVisual_sp.jpg);
+    background-position: left center;
+    background-size: cover;
+    height: 45rem;
+    margin-bottom: 15.5rem;
+    overflow: unset;
+    }
+
+@media (min-width: 768px) {
+.top {
+  position: relative;
+  background-image: url(/asset/image/top/mainVisual_pc.jpg);
+  background-position: left center;
+  background-size: cover;
+  height: 72rem;
+  margin-bottom: 0;
+  overflow: unset;
+}
+}
+
+.top img {
+  width: 100%;
+}
+
+.top-logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 14rem;
+  padding-top: 1.6rem;
+ }
+
+ @media (min-width: 768px) {
+  .top-logo {
+    max-width: 16.2rem;
+    padding-top: 2.75rem;
+     }
+  }
+
+.top-wrapper {
+  position: absolute;
+    bottom: -10.45rem;
+    left: 2.2rem;
+  }  
+
+@media (min-width: 768px) {
+  .top-wrapper {
+    position: absolute;
+    bottom: 38%;
+    left: 14.8%;
+    }  
+    }
+
+.top-title {
+  font-size: 4.1rem;
+  font-weight: 400;
+  font-family: "Marcellus", serif;
+  line-height: 1.35;
+  letter-spacing: 11.5px;
+   }
+
+  @media (min-width: 768px) {
+    .top-title {
+      font-size: 5rem;
+      line-height: 1.35;
+      letter-spacing: 14px;
+      margin-bottom: 0.5rem;
+       }    
+  }
+
+  .top-text {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: 768px) {
+    .top-text {
+      font-size: 2.5rem;
+      letter-spacing: 2.5px;
+    }
+  }
+  
+/* shop
+------------------------------------------ */
+.shop {
+margin: 0 1.6rem;  
+}
+
+@media (min-width: 768px) {
+  .shop {
+    margin: 4rem 15rem;
+    }    
+}
+
+.shop-container {
+  background-color: #f0f4ff;
+  padding: 2rem 0 3.5rem 0;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .shop-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    padding: 2rem 0 3.5rem 0;
+    margin-bottom: 0;
+  }
+}
+
+.shop-text-body {
+  text-align: center;
+}
+
+.shop-text {
+  font-size: 1.8rem;
+    font-weight: 600;
+    color: #111111;
+    letter-spacing: -3.5px;
+    margin: 0 4.5rem 0.35rem 0;
+}
+
+@media (min-width: 768px) {
+  .shop-text {
+    font-size: 2.4rem;
+    letter-spacing: -3.5px;
+    margin: 0 4.5rem 0.35rem 0;
+  }
+}
+
+.shop-sub-text {
+  font-size: 1.4rem;
+    font-weight: 400;
+    color: #111111;
+    letter-spacing: 1.25px;
+    margin: 0 0 2rem 0;
+}
+
+@media (min-width: 768px) {
+.shop-sub-text {
+  font-size: 1.6rem;
+  letter-spacing: 1.25px;
+    margin: 0 0 2rem 0;
+}
+}
+
+@media (min-width: 768px) {
+  .shop-list-group {
+display: flex;
+column-gap: 3.2rem;
+  }
+}
+
+.shop-list {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  letter-spacing: -5px;
+  margin: 0 auto 2rem;
+  padding: 1.55rem 5.5rem 1.55rem 0;
+}
+
+@media (min-width: 768px) {
+  .shop-list {
+    font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  letter-spacing: 0;
+  margin: 0 auto;
+  padding: 0.2rem 0 0.2rem 0.2rem;
+    }
+}
+
+.shop-list-one {
+background-color: #46c4dB;
+}
+
+.shop-list-two {
+  background-color: #5dd5ab;
+  letter-spacing: -2px;
+  margin: 0 auto;
+  padding: 1.55rem 1rem 1.55rem 0;
+}
+
+@media (min-width: 768px) {
+  .shop-list-two {
+    letter-spacing: -2px;
+    margin: 0 auto;
+    padding: 1.55rem 1rem 1.55rem 0;
+  }
+}
+
+/* introduction
+------------------------------------------ */
+.introduction {
+  background-image: url(/asset/image/introduction/introduction_sp.png);
+  background-position: left center;
+  background-size: cover;
+  height: 68rem;
+}
+
+@media (min-width: 768px) {
+  .introduction {
+    background-image: url(/asset/image/introduction/introduction_pc.png);
+    background-position: left center;
+    background-size: cover;
+    height: 68rem;
+  }
+}
+
+.introduction-container {
+  padding: 4.5rem 1.8rem 3.5rem 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .introduction-container {
+    padding: 2.2rem 0.90625rem 2.5rem 0.90625rem;
+  }
+}
+
+.introduction .section-title {
+  line-height: 1.55;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .introduction .section-title {
+    line-height: 1.55;
+    margin-bottom: 1rem;
+  }
+}
+
+.introduction-title {
+  font-size: 3rem;
+font-weight: 700;
+font-family: "EB Garamond", serif;
+color: #ffffff;
+display: block;
+text-align: center;
+}
+
+@media (min-width: 768px) {
+  .introduction-title {
+    font-size: 3.8rem;
+}
+}
+
+.introduction-title-sub {
+  font-size: 2.4rem;
+  font-weight: 600;
+  font-family: "Noto Serif JP", serif;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  letter-spacing: -4px;
+  margin-left: -0.3rem;
+}
+
+@media (min-width: 768px) {
+  .introduction-title-sub {
+    font-size: 2.4rem;
+    letter-spacing: -4px;
+    margin-left: -0.3rem;
+}
+}
+
+.introduction-text {
+  font-size: 1.4rem;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 2.275;
+    letter-spacing: -3.36px;
+}
+
+@media (min-width: 768px) {
+  .introduction-text {
+    font-size: 1.4rem;
+    line-height: 2.25;
+  letter-spacing: -3.37px;
+}
+}
+
+
+
+
+
+/* shop
+------------------------------------------ */
