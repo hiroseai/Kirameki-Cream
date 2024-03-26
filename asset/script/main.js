@@ -4,12 +4,12 @@ var swiper = new Swiper('.swiper', {
     loop: true,
     centeredSlides: true,
     slidesPerView: 1,
-    spaceBetween: 28,
+    spaceBetween: 55,
     breakpoints: {
         768: {
             centeredSlides: true,
             slidesPerView: 3,
-            spaceBetween: 52,
+            spaceBetween: 40,
         },
     },
     navigation: {
@@ -18,12 +18,17 @@ var swiper = new Swiper('.swiper', {
     },
     pagination: {
         el: '.swiper-pagination',
-        type: 'fraction',
-        formatFractionCurrent: function (number) {
-            return '0' + number;
-        },
-        formatFractionTotal: function (number) {
-            return '0' + number;
-        },
+        clickable: true,
     },
-});
+  });
+  
+/* faq
+------------------------------------------ */
+  $('.question-text').on('click', function (e) {
+    $(e.target).toggleClass('question-text-active');
+  });
+  
+  $('.question-text').on('click', function (e) {
+    var content = $(e.target).next();
+    content.slideToggle();
+  });

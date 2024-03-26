@@ -20,9 +20,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Marcellus&family=Noto+Serif+JP:wght@400;500;600&display=swap"
         rel="stylesheet">
-
     <!-- Font Awesome Icons -->
     <link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <!-- CSS-->
     <link rel="stylesheet" href="/asset/style/main.css">
 </head>
@@ -32,9 +33,7 @@
     <main>
         <section class="top container">
             <div class="top-container container-body">
-                <h1 class="top-logo">
-                    <img src="/asset/image/top/top-logo.png" alt="Kirameki Cream">
-                </h1>
+                <h1 class="top-logo">Kira-meki</h1>
                 <div class="top-wrapper">
                     <h2 class="top-title">Kirameki<br>Cream</h2>
                     <h3 class="top-text">肌のうるおい、煌めく。</h3>
@@ -146,11 +145,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-pagination-body">
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </section>
@@ -161,7 +158,7 @@
                     <span class="section-title">Q&A</span>
                     <span class="section-title-sub">よくあるご質問</span>
                 </h2>
-                <ul class="faq-list-group accordion-content">
+                <ul class="faq-list-group">
                     <li class="faq-list-one faq-list">
                         <div class="question-text">テキストが入ります。テキストが入ります。テキストが入ります。</div>
                         <div class="answer-text accordion-content">
@@ -198,25 +195,25 @@
 
         <section class="shop-two shop container">
             <div class="shop-container container-body">
-                <div class="shop-text-body">
-                    <h2 class="shop-text">キラメキクリーム</h2>
-                    <h3 class="shop-sub-text">税込 4,000円</h3>
+                <div class="shop-text-box">
+                    <div class="shop-text-body">
+                        <h2 class="shop-text">キラメキクリーム</h2>
+                        <h3 class="shop-sub-text">税込 4,000円</h3>
+                    </div>
+                    <ul class="shop-list-group">
+                        <li class="shop-list-one shop-list"><a href="#">オンラインショップへ</a></li>
+                        <li class="shop-list-two shop-list"><a href="#">購入する</a></li>
+                    </ul>
                 </div>
-                <ul class="shop-list-group">
-                    <li class="shop-list-one shop-list"><a href="#">オンラインショップへ</a></li>
-                    <li class="shop-list-two shop-list"><a href="#">購入する</a></li>
-                </ul>
             </div>
         </section>
 
     </main>
 
-    <!-- フッター -->
+    <!-- footer -->
     <footer class="footer container">
         <div class="footer-container container-body">
-            <div class="footer-logo">
-                <img src="/asset/image/footer/footer-logo.png" alt="Kirameki Cream">
-            </div>
+            <div class="footer-logo">Kira-meki</div>
             <ul class="footer-list-group">
                 <li class="footer-list-one footer-list"><a href="#">会社概要</a></li>
                 <li class="footer-list-two footer-list"><a href="#">個人情報保護ポリシー</a></li>
@@ -228,17 +225,15 @@
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- jQuery-Migrate -->
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
 
-    <!-- Slick -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <!-- Smart Tab -->
-    <link href="https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/css/smart_tab_all.min.css" rel="stylesheet"
-        type="text/css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/js/jquery.smartTab.min.js"></script>
     <!-- waypoints -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
         integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
     <script src="/asset/script/main.js"></script>
 
