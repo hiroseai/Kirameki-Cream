@@ -7,8 +7,9 @@ var swiper = new Swiper('.swiper', {
     spaceBetween: 55,
     breakpoints: {
         768: {
-            centeredSlides: true,
+            centeredSlides: false,
             slidesPerView: 3,
+            slidesPerGroup: 3,
             spaceBetween: 40,
         },
     },

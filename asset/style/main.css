@@ -252,7 +252,7 @@ li {
 
 @media (min-width: 768px) {
   .shop-container {
-      padding: 5rem 10rem 4.95rem 10rem;
+      padding: 4.95rem 10rem 4.95rem 10rem;
       }
 }
 
@@ -520,8 +520,8 @@ text-align: center;
     width: 100%;
     max-width: 98rem;
     margin: 0 auto;
-    padding: 4rem 0;
-      }
+    padding: 4rem 0 3.75rem 0;
+    }
 }
 
 .voice .swiper-slide {
@@ -565,7 +565,7 @@ text-align: center;
 
 @media (min-width: 768px) {
   .swiper-slide-body {
-    padding: 0 0 3.75rem 0;
+    padding: 4rem 1.6rem 4rem 1.6rem;
   }
 }
 
@@ -581,8 +581,8 @@ text-align: center;
 
 @media (min-width: 768px) {
   .voice-image {
-    width: 30%;
-    margin: 0 auto;
+    width: 37.315%;
+    margin: 0 auto 0.75rem;
     padding-left: 0;
   }
 }
@@ -600,7 +600,7 @@ margin-bottom: 1.5rem;
   .voice-name {
     font-size: 1.5rem;
     padding-left: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.35rem;
      }
 }
 
@@ -702,7 +702,7 @@ line-height: calc(28 / 14);
 
 @media (min-width: 768px) {
   .faq-container {
-    padding: 3.7rem 30rem 1.9rem 30rem
+    padding: 3.95rem 30rem 1.9rem 30rem
     }
 }
 
@@ -854,7 +854,10 @@ line-height: calc(28 / 14);
 
 @media (min-width: 768px) {
   .footer-container {
-    padding: 6.5rem 0 7.25rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 2.85rem 3rem 3.55rem 2.2rem;
      }
 }
 
@@ -876,7 +879,7 @@ line-height: calc(28 / 14);
     letter-spacing: 0.2em;
     line-height: calc(40 / 32);
     padding-left: 0.75rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
   }
 }
 
@@ -891,10 +894,11 @@ line-height: calc(28 / 14);
 @media (min-width: 768px) {
   .footer-list-group {
     display: flex;
-      justify-content: center;
-      align-items: center;
-      column-gap: 3rem;
-      margin-bottom: 2.3rem;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3.2rem;
+    margin-bottom: 0.65rem;
+    padding-left: 4.8rem;
     }
 }
 
@@ -919,6 +923,7 @@ line-height: calc(28 / 14);
 @media (min-width: 768px) {
   .footer-copyright {
     font-size: 1.2rem;
+    margin-bottom: 0.5rem;
   }
 }
 
