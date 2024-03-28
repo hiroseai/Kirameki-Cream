@@ -18,6 +18,10 @@ html {
    }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: "Noto Serif JP";
     line-height: 1.5;
@@ -159,7 +163,7 @@ li {
 
 .top::before {
   content: "";
-  background-image: url(/asset/image/top/mainVisual_sp.jpg);
+  background-image: url(/assets/image/top/mainVisual_sp.jpg);
   background-position: top center;
   background-size: cover;
   position: absolute;
@@ -171,7 +175,7 @@ li {
 @media (min-width: 768px) {
   .top::before {
   content: "";
-  background-image: url(/asset/image/top/mainVisual_pc.jpg);
+  background-image: url(/assets/image/top/mainVisual_pc.jpg);
   height: 72rem;
   }
 }
@@ -252,7 +256,8 @@ li {
 
 @media (min-width: 768px) {
   .shop-container {
-      padding: 4.95rem 10rem 4.95rem 10rem;
+    max-width: 100rem;
+      padding: 4.95rem 0 4.95rem 0;
       }
 }
 
@@ -356,7 +361,7 @@ background-color: #46c4dB;
 /* introduction
 ------------------------------------------ */
 .introduction {
-  background-image: url(/asset/image/introduction/introduction_sp.png);
+  background-image: url(/assets/image/introduction/introduction_sp.png);
   background-position: left center;
   background-size: cover;
   height: 68rem;
@@ -364,7 +369,7 @@ background-color: #46c4dB;
 
 @media (min-width: 768px) {
   .introduction {
-    background-image: url(/asset/image/introduction/introduction_pc.png);
+    background-image: url(/assets/image/introduction/introduction_pc.png);
     background-position: left center;
     background-size: cover;
     height: 55rem;
@@ -458,13 +463,16 @@ margin-bottom: 0.35rem;
 /* voice
 ------------------------------------------ */
 .voice-container {
+  position: relative;
+  max-width: 28rem;
   padding: 4.7rem 0 4rem 0;
 }
 
 @media (min-width: 768px) {
   .voice-container {
+    max-width: 98rem;
     padding: 7.5rem 0 7.5rem 0;
-     }
+         }
 }
 
 .section-title-body {
@@ -511,8 +519,9 @@ text-align: center;
 
 .voice .swiper {
   width: 100%;
+  max-width: 28rem;
   margin: 0 auto;
-  padding: 3.5rem 5.5rem;
+  padding: 3.5rem 0;
 }
 
 @media (min-width: 768px) {
@@ -592,14 +601,12 @@ text-align: center;
 font-weight: 400;
 letter-spacing: 0.05em;
 text-align: center;
-padding-left: 0.5rem;
 margin-bottom: 1.5rem;
 }
 
 @media (min-width: 768px) {
   .voice-name {
     font-size: 1.5rem;
-    padding-left: 0;
     margin-bottom: 1.35rem;
      }
 }
@@ -639,8 +646,8 @@ line-height: calc(28 / 14);
     background: url(/asset/image/voice/arrow-left-circle-fill.png);
     background-size: 3.2rem 3.2rem;
     position: absolute;
-    top: 51.5%;
-    left: 4%;
+    top: 58%;
+    left: -14%;
 }
 
 @media (min-width: 768px) {
@@ -648,8 +655,8 @@ line-height: calc(28 / 14);
     width: 4.8rem;
     height: 4.8rem;
     background-size: 4.8rem 4.8rem;
-    top: 52%;
-    left: 0%;
+    top: 57%;
+    left: -9%;
   }
 }
 
@@ -659,8 +666,8 @@ line-height: calc(28 / 14);
     background: url(/asset/image/voice/arrow-right-circle-fill.png);
     background-size: 3.2rem 3.2rem;
     position: absolute;
-    top: 51.5%;
-    right: 4%;
+    top: 58%;
+    right: -14%;
 }
 
 @media (min-width: 768px) {
@@ -668,22 +675,22 @@ line-height: calc(28 / 14);
     width: 4.8rem;
     height: 4.8rem;
     background-size: 4.8rem 4.8rem;
-    top: 52%;
-    right: 0%;
+    top: 57%;
+    right: -9%;
   }
 }
 
 .voice .swiper-pagination {
-  bottom: 1rem;
-  display: flex;
+   display: flex;
   justify-content: center;
   align-items: center;
+  bottom: 5rem;
   column-gap: 0.1rem;
  }
 
 @media (min-width: 768px) {
   .voice .swiper-pagination {
-      bottom: 0.5rem;
+      bottom: 8rem;
       column-gap: 0.1rem;
   }
 }
@@ -702,7 +709,8 @@ line-height: calc(28 / 14);
 
 @media (min-width: 768px) {
   .faq-container {
-    padding: 3.95rem 30rem 1.9rem 30rem
+    max-width: 60rem;
+    padding: 3.95rem 0 1.9rem 0;
     }
 }
 
@@ -838,7 +846,7 @@ line-height: calc(28 / 14);
 
 @media (min-width: 768px) {
   .shop-two .shop-container {
-   padding: 5rem 10rem 5rem 10rem;
+   padding: 5rem 0 5rem 0;
     }
 }
 
@@ -927,3 +935,41 @@ line-height: calc(28 / 14);
   }
 }
 
+/* topButton
+------------------------------------------ */
+.topButton {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0071ce; 
+  width: 4rem;
+  height: 4rem;
+  bottom: 16.5rem;
+  right: 1.6rem;
+ }
+
+ @media (min-width: 768px) {
+  .topButton {
+    width: 4rem;
+    height: 4rem;
+    bottom: 10.4rem;
+    right: 15rem;
+   }
+ }
+
+.topButton::before {
+  content: "\f062";
+  font-family: "Font Awesome 5 Free";
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #ffffff;
+  }
+
+  @media (min-width: 768px) {
+    .topButton::before {
+      font-size: 1.6rem;
+      font-weight: 900;     
+      }
+  }
