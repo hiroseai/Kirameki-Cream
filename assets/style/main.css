@@ -18,10 +18,6 @@ html {
    }
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
     font-family: "Noto Serif JP";
     line-height: 1.5;
@@ -643,7 +639,7 @@ line-height: calc(28 / 14);
 .voice .swiper-button-prev {
   width: 3.2rem;
     height: 3.2rem;
-    background: url(/asset/image/voice/arrow-left-circle-fill.png);
+    background: url(/assets/image/voice/arrow-left-circle-fill.png);
     background-size: 3.2rem 3.2rem;
     position: absolute;
     top: 58%;
@@ -663,7 +659,7 @@ line-height: calc(28 / 14);
 .voice .swiper-button-next {
   width: 3.2rem;
     height: 3.2rem;
-    background: url(/asset/image/voice/arrow-right-circle-fill.png);
+    background: url(/assets/image/voice/arrow-right-circle-fill.png);
     background-size: 3.2rem 3.2rem;
     position: absolute;
     top: 58%;
@@ -841,12 +837,12 @@ line-height: calc(28 / 14);
 /* shop-two
 ------------------------------------------ */
 .shop-two .shop-container {
-  padding: 5.2rem 1.6rem 5rem 1.6rem;
+  padding: 5.2rem 1.6rem 1rem 1.6rem;
 }
 
 @media (min-width: 768px) {
   .shop-two .shop-container {
-   padding: 5rem 0 5rem 0;
+   padding: 5rem 0 1rem 0;
     }
 }
 
@@ -935,30 +931,42 @@ line-height: calc(28 / 14);
   }
 }
 
-/* topButton
+/* topbutton
 ------------------------------------------ */
-.topButton {
-  position: fixed;
+.topbutton-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1.6rem;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .topbutton-wrapper {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding-right: 0;
+      }
+}
+
+.topbutton {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #0071ce; 
   width: 4rem;
   height: 4rem;
-  bottom: 16.5rem;
-  right: 1.6rem;
- }
+   }
 
  @media (min-width: 768px) {
-  .topButton {
+  .topbutton {
     width: 4rem;
     height: 4rem;
-    bottom: 10.4rem;
-    right: 15rem;
-   }
+       }
  }
 
-.topButton::before {
+.topbutton::before {
   content: "\f062";
   font-family: "Font Awesome 5 Free";
   color: #ffffff;
@@ -968,8 +976,11 @@ line-height: calc(28 / 14);
   }
 
   @media (min-width: 768px) {
-    .topButton::before {
+    .topbutton::before {
       font-size: 1.6rem;
       font-weight: 900;     
       }
   }
+
+ 
+
