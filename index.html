@@ -10,7 +10,7 @@
     <meta property="og:title" content="肌のうるおい、煌めく Kirameki Cream | Kira-meki">
     <meta property="og:description" content="Kirameki Creamはお肌のうるおいを美しく保ちます。">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="http://localhost:5500">
+    <meta property="og:url" content="https://example.com">
     <meta property="og:locale" content="ja_JP">
     <!-- リセットCSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ress@4.0.0/dist/ress.min.css">
@@ -20,8 +20,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Marcellus&family=Noto+Serif+JP:wght@400;500;600&display=swap"
         rel="stylesheet">
-    <!-- Font Awesome Icons -->
-    <link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet">
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- Swiper -->
@@ -35,10 +33,10 @@
     <main>
         <section class="top container">
             <div class="top-container container-body">
-                <h1 class="top-logo">Kira-meki</h1>
+                <div class="top-logo"><img src="/assets/image/top/top-logo.png" alt="Kira-meki"></div>
                 <div class="top-wrapper">
-                    <h2 class="top-title">Kirameki<br>Cream</h2>
-                    <h3 class="top-text">肌のうるおい、煌めく。</h3>
+                    <h1 class="top-title">Kirameki<br>Cream</h1>
+                    <p class="top-text">肌のうるおい、煌めく。</p>
                 </div>
             </div>
         </section>
@@ -50,12 +48,12 @@
                         <div class="shop-text">キラメキクリーム</div>
                         <div class="shop-sub-text">税込 4,000円</div>
                     </div>
-                    <ul class="shop-list-group">
-                        <li class="shop-list-one shop-list"><a href="#">オンラインショップへ</a></li>
-                        <li class="shop-list-two shop-list">
-                            <form action="/cart/">購入する</form>
-                        </li>
-                    </ul>
+                    <div class="shop-button-group">
+                        <a href="#" class="shop-button-one shop-button">オンラインショップへ</a>
+                        <form action="/cart/">
+                            <button type="submit" class="shop-button-two shop-button">購入する</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -204,12 +202,12 @@
                         <div class="shop-text">キラメキクリーム</div>
                         <div class="shop-sub-text">税込 4,000円</div>
                     </div>
-                    <ul class="shop-list-group">
-                        <li class="shop-list-one shop-list"><a href="#">オンラインショップへ</a></li>
-                        <li class="shop-list-two shop-list">
-                            <form action="/cart/">購入する</form>
-                        </li>
-                    </ul>
+                    <div class="shop-button-group">
+                        <a href="#" class="shop-button-one shop-button">オンラインショップへ</a>
+                        <form action="/cart/">
+                            <button type="submit" class="shop-button-two shop-button">購入する</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -217,13 +215,13 @@
     </main>
 
     <div class="topbutton-wrapper">
-        <a href="#" class="topbutton"> </a>
+        <a href="#" class="topbutton"></a>
     </div>
 
     <!-- footer -->
     <footer class="footer container">
         <div class="footer-container container-body">
-            <div class="footer-logo">Kira-meki</div>
+            <div class="footer-logo"><img src="/assets/image/footer/footer-logo.png" alt="Kira-meki"></div>
             <ul class="footer-list-group">
                 <li class="footer-list-one footer-list"><a href="/company/">会社概要</a></li>
                 <li class="footer-list-two footer-list"><a href="/privacy-policy/">個人情報保護ポリシー</a></li>
